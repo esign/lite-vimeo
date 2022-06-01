@@ -113,6 +113,9 @@ export class LiteVimeoEmbed extends HTMLElement {
     }
   }
 
+  get params(): string {
+    return `${this.getAttribute('params')}`;
+  }
 
   /**
    * Define our shadowDOM for the component
@@ -292,7 +295,7 @@ export class LiteVimeoEmbed extends HTMLElement {
       const apValue = ((this.autoLoad && this.autoPlay) || (!this.autoLoad)) ?
                         "autoplay=1" : "";
       const srcUrl = new URL(
-        `/video/${this.videoId}?${apValue}&#t=${this.videoStartAt}`,
+        `/video/${this.videoId}?${apValue}&#t=${this.videoStartAt}&${this.params}`,
         "https://player.vimeo.com/"
       );
 

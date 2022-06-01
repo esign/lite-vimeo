@@ -101,6 +101,14 @@ Uses Intersection Observer if available to automatically load the Vimeo iframe w
 <lite-vimeo videoid="364402896" autoload></lite-vimeo>
 ```
 
+## Vimeo QueryParams
+Use any Vimeo queryparmas you like
+```html
+<lite-vimeo videoid="364402896" params="background=1">
+</lite-vimeo>
+```
+
+
 ## Auto Play (requires AutoLoad)
 
 ```html

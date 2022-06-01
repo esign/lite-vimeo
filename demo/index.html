@@ -75,8 +75,8 @@
 
     <h3>Set video start time</h3>
     <pre>
-&lt;lite-vimeo 
-   videoid=&quot;364402896&quot; 
+&lt;lite-vimeo
+   videoid=&quot;364402896&quot;
    <b>start=&quot;5m30s&quot;</b>&gt;&lt;/lite-vimeo&gt;
     </pre>
     <div>
@@ -86,6 +86,7 @@
     <div id="bigBlock">
       Scroll down to trigger autoLoad()
     </div>
+
     <h3>AutoLoad with IntersectionObserver</h3>
     <pre>
 
@@ -97,10 +98,22 @@
       autoload
     ></lite-vimeo>
 
+    <h3>Vimeo QueryParams</h3>
+    <pre>
+
+&lt;lite-vimeo videoid=&quot;364402896&quot; videotitle=&quot;This is a video title&quot; params=&quot;background=1&quot; <b>autoload</b>&gt;&lt;/lite-vimeo&gt;
+    </pre>
+    <lite-vimeo
+      videoid="364402896"
+      videotitle="This is a video title"
+      params="background=1"
+      autoload
+    ></lite-vimeo>
+
     <h3>Autoplay</h3>
     <pre>
-&lt;lite-vimeo 
-   videoid=&quot;364402896&quot; 
+&lt;lite-vimeo
+   videoid=&quot;364402896&quot;
    autoload <b>autoplay</b>
    start=&quot;5m30s&quot;&gt;&lt;/lite-vimeo&gt;
     </pre>
